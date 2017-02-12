@@ -80,14 +80,20 @@ section
     @media (max-width: 768px)
         .left
             width: 100%
-            text-align: justify
+            text-align: center
             padding: 0
+
+            svg, img
+                max-width: 60%
 
         .right
             width: 100%
 
+            .text
+                text-align: justify
+
             svg, img
-                max-width: 50%
+                width: 100%!important
 
 @media screen and (max-width: 520px)
     section
