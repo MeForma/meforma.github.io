@@ -1,0 +1,47 @@
+#prints
+    text-align: center
+    margin: 0
+
+
+.prints
+    display: inline-flex
+    justify-content: center
+    flex-wrap: wrap
+
+    .print
+        margin: 15px
+        text-align: center
+        width: 20%
+        +box-shadow (0px 0px 35px 2px, rgba(50, 50, 50, 0.4))
+
+        h3, p
+            margin: 5px
+
+        .pic
+            width: 100px
+            height: 100px
+    @media (max-width: 992px)
+        .prints
+            width: 28%
+    @media (max-width: 768px)
+        .prints
+            width: 40%
+
+#consumer
+    .top-bar
+        .line
+            background-color: #45D8B7
+
+#establishment
+    background-color: $mfBlue
+    color: #FFF
+
+    .top-bar
+        h1
+            background-color: $mfBlue
+
+        .line
+            background-color: #45D8B7
+    // .prints
+    //     .pic
+    //         border: 1px solid $tb-red
