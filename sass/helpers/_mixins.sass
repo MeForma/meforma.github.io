@@ -1,0 +1,87 @@
+=border-radius($radius)
+    border-radius: $radius
+    -moz-border-radius: $radius
+    -ms-border-radius: $radius
+    -webkit-border-radius: $radius
+
+=box-shadow($string, $color)
+    box-shadow: $string $color
+    -moz-box-shadow: $string $color
+    -webkit-box-shadow: $string $color
+
+=transition($transition: all, $time: 0.2s)
+    -webkit-transition: $transition $time
+    -moz-transition: $transition $time
+    transition: $transition $time
+
+=transform($transform: translateZ(0))
+    -webkit-transform: $transform
+    -moz-transform: $transform
+    transform: $transform
+
+=webkitMoz($property, $value)
+    -webkit-#{$property}: $value
+    -moz-#{$property}: $value
+    #{$property}: $value
+
+=coloredElement($bg, $border: $bg, $color: #FFF, $hover: nill)
+    background-color: $bg
+    border-color: $border
+    color: $color
+
+    @if $hover
+        &:hover
+            background-color: $hover
+
+=displayFlex($flow: row wrap, $justify: center)
+    display: flex
+    flex-flow: $flow
+    justify-content: $justify
+
+=bounce($b-color, $origin: left, $f-color: #333)
+    vertical-align: middle
+    position: relative
+
+    +transform
+
+    +transition(color, 0.5s)
+
+    +webkitMoz(backface-visibility, hidden)
+
+    &:before
+        background-color: $b-color
+        border-radius: 3px
+        bottom: 0
+        content: ""
+        left: 0
+        position: absolute
+        right: 0
+        top: 0
+        z-index: -1
+
+        +transform(scaleX(0))
+
+        +transition(transform, 0.5s)
+
+        @if $origin == left
+            +webkitMoz(transform-origin, 0 50%)
+        @else if $origin == right
+            +webkitMoz(transform-origin, 100% 50%)
+        @else if $origin == center
+            +webkitMoz(transform-origin, 50%)
+        @else if $origin == bottom
+            +transform(scaleY(0))
+
+            +webkitMoz(transform-origin, 50% 0)
+        @else if $origin == top
+            +transform(scaleY(0))
+
+            +webkitMoz(transform-origin, 50% 100%)
+
+    &:hover
+        color: $f-color
+
+        &:before
+            +transform(scaleX(1))
+
+            +webkitMoz(transition-timing-function, cubic-bezier(0.52, 1.64, 0.37, 0.66))
