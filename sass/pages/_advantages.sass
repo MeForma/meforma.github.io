@@ -4,9 +4,7 @@
 
 
 .prints
-    display: inline-flex
-    justify-content: center
-    flex-wrap: wrap
+    display: inline-block
 
     .print
         margin: 15px
@@ -20,9 +18,15 @@
         .pic
             width: 100px
             height: 100px
+
     @media (max-width: 768px)
         .print
             width: 40%
+
+    @media (max-width: 512px)
+        .print
+            margin: 3px
+            width: 100%
 
 #consumer
     .top-bar
