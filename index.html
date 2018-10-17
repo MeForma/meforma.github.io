@@ -4,101 +4,98 @@ redirect_to: "https://meforma.app"
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="initial-scale=1">
-    <meta name="keywords" content="MeForma, meforma, vida academica, UFBA, UEFS, curso, graduação, aplicativo, gerenciamento de graduação, gerenciar vida, gerenciar, app">
-    <meta property="og:site_name" content="MeForma!">
-    <meta property="og:title" content="MeForma!" />
-    <meta property="og:description" content="Vida acadêmica traduzida em números!" />
-    <meta property="og:image" itemprop="image" content="https://meforma.github.io/assets/img/meforma-logo.svg">
-    <meta property="og:type" content="website" />
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./node_modules/gaintime/css/gaintime.min.css">
+    <link rel="stylesheet" href="./assets/css/gthemes.css">
+    <link rel="icon" type="image/png" href="./assets/img/ic.png">
+    <meta name="keywords" content="MeForma, meforma, vida academica, UFBA, UEFS, curso, graduação, aplicativo, gerenciamento de graduação, gerenciar vida, gerenciar, app">
+    <meta name="description" content="Vida acadêmica traduzida em números!">
     <title>MeForma!</title>
-    <link rel="stylesheet" href="assets/css/meforma.css" media="screen" title="no title">
-    <link rel="icon" type="image/png" href="assets/img/ic.png">
   </head>
-  <body>
-    <header>
-        <img src="assets/img/icon.png" class="menu-logo" alt="MeForma!">
-        <label for="menu-toggle" id="menu-icon">
-            <svg viewBox="0 0 24 24" class="menu-toggle" >
-                <path fill="#333" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+  <body class="panel">
+    <header id="menu" class="gt-top-menu fixed transparent">
+          <a href="#">
+            <img class="logo" src="assets/img/g.svg" alt="">
+            <img class="w-logo" src="assets/img/wg.svg" alt="">
+          </a>
+          <label class="menu-toggle">
+            <svg viewBox="0 0 24 24">
+              <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
             </svg>
-        </label>
-        <input id="menu-toggle" class="menu-toggle" type="checkbox" name="name" value="">
-        <nav class="menu">
+          </label>
+          <nav>
             <ul>
-                <a href="#home"><li>O quê?</li></a>
-                <a href="#prints"><li>Como?</li></a>
-                <a href="courses"><li>Cursos</li></a>
-                <a href="#contact"><li>Contato</li></a>
+              <li><a href="Alunos_UFBA.html">Aluno UFBA</a> </li>
+              <li><a class="btn info" target="_blank" href="https://meforma.app/br/#/login">Entrar</a></li>
+              <li><a style="color: #333!important" class="btn default" target="_blank" href="https://meforma.app/br/#/register">Cadastrar</a></li>
             </ul>
-        </nav>
-    </header>
-    <section id="home">
-      <div class="left">
-
-        <img src="assets/img/meforma-logo.svg" alt="" />
-      </div>
-      <div class="right">
-          <div class="text">
-              <h2>O QUE É ISSO, RAPAZ?</h2>
-              <p>
-                  O MeForma! é um aplicativo GRATUITO de acompanhamento e gerenciamento online de vida acadêmica, que proporciona uma experiência diferente e eficiente pra quem não quer ter dor de cabeça na hora de se formar.
-              </p>
-              <p>
-                Com o MeForma! você registra as horas e disciplinas que já cumpriu e vê a sua situação até atingir 100% de conclusão de curso.
-              </p>
-              <p>
-                  Uma plataforma prática e bonita, desenvolvida para substituir anotações e planilhas exaustivas e confusas, com dados baseados em fontes oficiais da sua universidade, e não em boca a boca de veterano! :D
-              </p>
+          </nav>
+        </header>
+    <section id="home" class="banner relative" style="min-height: auto; height: auto">
+      <div class="cover-box" style="height: auto; position: relative">
+        <div class="cover full-bg" style="background-image: url('assets/img/bg.jpg'); animation: parallax 1s ease-in-out"></div>
+        <!-- rgba(221, 6, 6, 0.41) -->
+        <div class="centerex" style="background: rgba(0, 20, 93, 0.67)">
+          <div class="gt-section transparent" style="color: #FFF">
+            <div class="flex-box row" style="padding-top: 30px">
+              <div class="text-left">
+                <div class="text-center">
+                  <h1 class="no-margin content-align" style="vertical-align: middle">
+                    <img src="assets/img/meforma-logo.svg" alt="" style="width: 300px; max-width: 100%"/>
+                  </h1>
+                  <h2 style="vertical-align: middle">
+                    Sua vida acadêmica nunca foi tão simples!
+                  </h2>
+                </div>
+                <div class="inform danger">
+                  <p>A versão anterior do MeForma foi descontinuada, os dados inseridos nela, a partir de hoje, não serão mais computados.</p>
+                  <p>A saber, estamos falando da versão 1.2.0, com os menus cor-de-rosa. :)</p>
+                </div>
+              </div>
+            </div>
+            <!-- <h2>Temas e templates gratuitos feitos com GainTime!</h2> -->
+            <!-- <button class="btn lg" type="button" name="button" style="width: auto">Procure Temas e Templates</button> -->
           </div>
-          <a href="https://play.google.com/store/apps/details?id=com.rawbeets.meformaa" target="_blank"><img src="assets/img/g-play-button.png" alt="PlayStore" /></a>
+        </div>
       </div>
     </section>
-    <section id="prints">
-      <div class="top-bar">
-          <div class="line"></div>
-          <h1>OLHA SÓ QUE LEGAL</h1>
+    <section>
+      <div class="medium center">
+        <h2 class="text-center">O QUE É ISSO, RAPAZ?</h2>
+        <p>
+          O MeForma! é um sistema de acompanhamento e gerenciamento online de vida acadêmica, que proporciona uma experiência diferente e eficiente pra quem não quer ter dor de cabeça na hora de se formar.
+        </p>
+        <p>
+          Com o MeForma! você registra as horas e disciplinas que já cumpriu e vê a sua situação até atingir 100% de conclusão de curso.
+        </p>
+        <p>
+          Uma plataforma prática e bonita, desenvolvida para substituir anotações e planilhas exaustivas e confusas, com dados baseados em fontes oficiais da sua universidade, e não em boca a boca de veterano! :D
+        </p>
       </div>
-      <div class="prints">
-        <img class="print" src="assets/img/a.png" alt="" />
-        <img class="print" src="assets/img/b.png" alt="" />
-        <img class="print" src="assets/img/c.png" alt="" />
-        <img class="print" src="assets/img/d.png" alt="" />
-      </div>
-      <p>
-        Essa é a exibição de algumas das telas do MeForma!
-      </p>
     </section>
-    <footer id="contact">
-        <div class="body">
-            <div class="column">
-                <a href="mailto:rawbeets7@gmail.com?subject=contato-site">rawbeets7@gmail.com</a>
-                <a href="https://github.com/MeForma" target="_blank"><img src="assets/img/github.svg" alt="" /> GitHub</a>
-                <a href="https://github.com/jprodrigues70" target="_blank"><img src="assets/img/me.jpg" alt="" /> Desenvolvedor</a>
-                <a href="https://www.facebook.com/AppMeForma" target="_blank"><img src="assets/img/facebook.png" alt="" /> @AppMeForma</a>
-            </div>
-            <div class="column">
-              <p>
-                Em breve, no MeForma!:
-              </p>
-              <ul>
-                <li>Todos os cursos da UFBA</li>
-                <li>Todos os cursos da UEFS</li>
-                <li>Trabalhos Offline</li>
-                <li>Compatibilidade com IOS e WP</li>
-              </ul>
-              <br>
-              <p>
-                Versão atual: 1.2.0
-              </p>
-            </div>
+    <footer style="background-color: #5d5a5f; color: #FFF">
+      <div class="flex-box">
+        <div class="col">
+          <p><b>MeForma!</b> é um projeto criado por <a style = "color: #FFF" href="https://jprodrigues70.github.io">JP Rodrigues</a>.</p>
+          <p>O conteúdo referente às disciplinas, cursos e nomes das universidades foi obtido através de dados públicos disponíveis na WEB.</p>
+          <p>A versão 2018 deste projeto está sendo orientada pelo Prof. Dr. Tiago Januário.</p>
         </div>
-        <div class="copyright">
-            © 2017 RawBeets
+        <div class="col">
+          <p>O MeForma também está disponível parar android.</p>
+          <a href="https://play.google.com/store/apps/details?id=com.rawbeets.meformaa" target="_blank"><img src="assets/img/g-play-button.png" alt="PlayStore"></a>
         </div>
+        <div class="col">
+          <h3>Contato</h3>
+          <p>E-mail: <a href="mailto:rawbeets7@gmail.com?subject=MeForma_Web" style="color:#FFF">rawbeets7@gmail.com</a></p>
+        </div>
+      </div>
     </footer>
+    <script src="assets/js/menu.js" charset="utf-8"></script>
+    <script src="assets/js/gt-helper.js" charset="utf-8"></script>
+    <script src="node_modules/gaintime/js/gaintime.min.js" charset="utf-8"></script>
+    <script src="assets/js/restful.js" charset="utf-8"></script>
   </body>
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="assets/js/meforma.js"></script>
 </html>
+
